@@ -1,3 +1,27 @@
 
 
 envvvv: dev
+
+spring:
+  #配置rabbitMQ,如果不配置，默认连接 guest@127.0.0.1:5672
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  # 配置zipkin服务
+  zipkin:
+    base-url: http://zipkin-server/         
+    locator:
+      discovery:
+        enabled: true
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        # 暴露所有端点
+        include: '*'   
+    # 总是进行健康监测
+    health:
+      show-details: always       
