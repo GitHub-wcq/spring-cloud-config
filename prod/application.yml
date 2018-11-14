@@ -8,16 +8,11 @@ spring:
     port: 5672
     username: guest
     password: guest
-<<<<<<< HEAD
   # 配置zipkin服务
   zipkin:
     base-url: http://zipkin-server/         
     locator:
       discovery:
-        enabled: true
-=======
-    
->>>>>>> 937e946cd51e1ae68a071cc7b57a08f94d65711b
 management:
   endpoints:
     web:
