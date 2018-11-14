@@ -14,6 +14,10 @@ spring:
     locator:
       discovery:
         enabled: true
+  sleuth:
+    sampler:
+      # 即以100%的概率将链路的数据上传到Zipkin Server上，默认为0.1
+      probability: 1.0  
         
 management:
   endpoints:
