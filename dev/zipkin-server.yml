@@ -1,0 +1,16 @@
+# 指定zipkin使用的是rabbitMQ的队列
+zipkin:
+  collector:
+    rabbitmq:
+      addresses: localhost:5672
+      username: guest
+      password: guest
+      queue: zipkin
+
+
+# 
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
