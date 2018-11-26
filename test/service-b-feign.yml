@@ -1,0 +1,2 @@
+service:
+  name: service-b-feign -- 1.0
