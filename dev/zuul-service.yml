@@ -50,6 +50,6 @@ zuul:
 service-b-config :
   ribbon:
     MaxAutoRetries: 5 # 对当前服务的重试次数
-    MaxAutoRetriesNextServer: 1 # 切换相同Server的次数
-    ConnectTimeout: 3000
+    MaxAutoRetriesNextServer: 1 # 切换相同Server的次数,表示每个实例连接一次，每个服务尝试连接5次
+    ConnectTimeout: 10000  # Connect timeout
 
